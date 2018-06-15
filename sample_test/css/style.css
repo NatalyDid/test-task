@@ -300,3 +300,10 @@ label.error {
         padding-bottom: 70px !important;
     }
 }
+
+@media screen and (max-width: 380px) {
+    body{
+        overflow-x: scroll;
+        width: 380px;
+    }
+}
