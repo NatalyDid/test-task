@@ -1,0 +1,302 @@
+@font-face {
+    font-family: 'helvetica';
+    src: local('helvetica'), url('../fonts/Helvetica-LT-67-Medium-Condensed.ttf') format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.custom-padding-left {
+    padding-left: 0 !important;
+}
+
+.custom-padding-right {
+    padding-right: 0 !important;
+}
+
+/*********************header******************/
+.wrapper {
+    background: #eaeaea;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.container-header {
+    background: url("../img/san-diego.png") no-repeat 0 30px;
+    background-size: contain;
+    height: 500px;
+}
+
+.top-header {
+    padding: 20px;
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.contacts-phone {
+    font-family: 'helvetica', sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-left: 10px;
+}
+
+.info-header {
+    padding: 135px 0 0 0;
+
+}
+
+.header-text {
+    margin-bottom: 12px;
+    font-family: "helvetica", Arial, sans-serif;
+    font-size: 30px;
+    line-height: 36px;
+    color: #fff;
+    text-shadow: 3px 3px 3px #2c548f;
+}
+
+.header-text-accent-light {
+    color: #ffefe0;
+    font-size: 36px;
+}
+
+.header-text-accent-dark {
+    text-transform: uppercase;
+    color: #ebd0b4;
+}
+
+.form {
+    border-radius: 15px;
+    background: #fff;
+    padding: 20px;
+    background: linear-gradient(to top, #ede7de 0%, #fff 20%, #fff 70%, #e8dfd5 95%);
+    border-top: 4px solid #fff;
+}
+
+.form-title {
+    font-family: 'helvetica', sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.form-input {
+    width: 100%;
+    height: 40px;
+    box-shadow: 0 0 5px #a5a5a5;
+    margin-top: 20px;
+    display: block;
+    padding: 11px 25px;
+    font-size: 18px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn-form {
+    border: 1px solid #ebd0b4 !important;
+    background: #fff;
+    width: 100%;
+    font-size: 18px;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 4px;
+    background: linear-gradient(to top, #ebd0b4 0%, #ffe6cd 100%);
+}
+
+label.error {
+    color: #cc6055;
+    font-style: italic;
+}
+
+.form-input.error {
+    border-color: #cc6055;
+}
+
+/*********************content**********************/
+.container-content {
+    background: #fff;
+    padding-bottom: 40px;
+    border-radius: 0 0 20px 20px;
+}
+
+.content-description {
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    line-height: 24px;
+    padding-right: 10px !important;
+    padding-top: 10px;
+}
+
+.content-title {
+    font-family: "helvetica", Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #852432;
+    position: absolute;
+    left: 40px;
+    top: -22px;
+}
+
+.description-item {
+    display: flex;
+    align-items: center;
+    padding: 16px 10px 16px 0;
+    border-bottom: 1px solid #bdcadc;
+}
+
+.item-image {
+    min-width: 55px;
+    margin-right: 5px;
+}
+
+.item-image > img {
+    margin: 0 auto;
+    display: block;
+}
+
+.warning {
+    margin-top: 20px;
+    background: #ffefe0;
+    border-top: 1px solid #ebd0b4;
+    border-bottom: 1px solid #ebd0b4;
+    padding: 18px 10px;
+}
+
+.warning-title {
+    color: #852432;
+}
+
+.comment {
+    background: url("../img/quote-left.png") no-repeat 20px 20px, url("../img/quote-right.png") no-repeat 315px 218px, #ffefe0;
+    border: 1px solid #ebd0b4;
+    padding: 20px;
+    line-height: 24px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.sidebar {
+    padding-top: 20px;
+}
+
+.comment-author {
+    color: #777777;
+    margin-top: 18px;
+}
+
+.privacy-policy {
+    color: #777777;
+    line-height: 24px;
+    padding: 30px 30px 0 20px;
+}
+
+/************************footer**********************/
+.container-footer {
+    color: #777777;
+    padding: 20px 0 135px 30px !important;
+}
+
+/*******************media queries********************/
+@media screen and (max-width: 959px) {
+    .top-header {
+        padding: 20px 0;
+    }
+
+    .container-header {
+        height: 344px;
+    }
+
+    .info-header {
+        padding-top: 75px;
+    }
+
+    .info-header-content {
+        padding-right: 10px;
+    }
+
+    .form {
+        padding: 15px;
+    }
+
+    .form-title {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .form-input {
+        height: 32px;
+    }
+
+    .content-title {
+        top: -34px;
+    }
+
+    .comment {
+        background: url(../img/quote-left.png) no-repeat 20px 20px, url(../img/quote-right.png) no-repeat 178px 390px, #ffefe0;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .custom-padding-left {
+        padding-left: 20px !important;
+    }
+
+    .custom-padding-right {
+        padding-right: 20px !important;
+    }
+
+    .top-header {
+        display: flex;
+        align-items: center;
+    }
+
+    .img-logo {
+        width: 150px;
+    }
+
+    .img-phone {
+        width: 25px;
+    }
+
+    .container-header {
+        height: 216px;
+    }
+
+    .info-header {
+        padding-top: 20px;
+    }
+
+    .header-text {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .header-text-accent-light {
+        font-size: 24px;
+    }
+
+    .content-title {
+        top: 17px;
+    }
+
+    .content-description {
+        padding-top: 40px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .comment {
+        background: url(../img/quote-left.png) no-repeat 20px 20px, url(../img/quote-right.png) no-repeat 270px 255px, #ffefe0;
+    }
+
+    .container-footer {
+        padding-bottom: 70px !important;
+    }
+}
